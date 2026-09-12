@@ -1,3 +1,4 @@
+#include "../secrets.h"
 #define BLYNK_PRINT Serial
 
 #define BLYNK_TEMPLATE_ID "YOUR_TEMPLATE_ID"
@@ -24,8 +25,6 @@
 #include <ESP32Servo.h>
 
 // Wi-Fi credentials
-char ssid[] = "YOUR_WIFI_NAME";
-char pass[] = "YOUR_WIFI_PASSWORD";
 
 // Parking slot sensors
 const int slotSensorPin[5] = {-1, 34, 35, 36, 39};
