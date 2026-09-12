@@ -1,80 +1,72 @@
-\# Smart Parking Availability Monitoring System Using IoT
-
-
+# Smart Parking Availability Monitoring System Using IoT
 
 An IoT-based smart parking system that monitors parking slot availability in real time using ESP32, IR sensors, LCD, LEDs, servo motors, and Blynk IoT.
 
+## Project Overview
 
+The system detects the availability of four parking slots using IR sensors. The ESP32 processes the sensor data and displays the parking status on an LCD. The parking information is also sent to the Blynk IoT platform for remote monitoring and booking.
 
-\## Technologies Used
+Servo motors are used to control the entry and exit gates, while LEDs indicate the status of individual parking slots.
 
+## Features
 
+- Real-time parking slot monitoring
+- Four-slot parking availability detection
+- IR-based vehicle detection
+- LCD display for parking status
+- LED indication for slot status
+- Parking slot booking through Blynk
+- Remote monitoring using Blynk IoT
+- Automatic entry and exit gate control
 
-\- ESP32
+## System Architecture
 
-\- IR Sensors
+![System Architecture](images/architecture.png)
 
-\- Arduino IDE
+## Data Flow
 
-\- Embedded C/C++
+### Level 0
 
-\- Blynk IoT
+![Data Flow Level 0](images/data-flow-level-0.png)
 
-\- LCD Display
+### Level 1
 
-\- LEDs
+![Data Flow Level 1](images/data-flow-level-1.png)
 
-\- Servo Motors
+## Hardware Setup
 
-\- Wi-Fi
+![Hardware Setup](images/hardware-setup.jpg)
 
+## Parking Model
 
+![Parking Model](images/parking-model.jpg)
 
-\## Key Features
+### Parking Model with Vehicles
 
+![Parking Model with Vehicles](images/parking-model-with-vehicles.jpg)
 
+## Blynk Dashboard
 
-\- Real-time parking slot monitoring
+![Blynk Dashboard](images/blynk-dashboard.jpg)
 
-\- Detection of occupied and available parking slots
+## Technologies Used
 
-\- LCD-based parking status display
+- ESP32
+- IR Sensors
+- Arduino IDE
+- Embedded C/C++
+- Blynk IoT
+- LCD Display
+- LEDs
+- Servo Motors
+- Wi-Fi
 
-\- Blynk mobile application integration
+## Project Structure
 
-\- Parking slot booking
-
-\- LED indication for booked slots
-
-\- Automatic entry and exit gate control
-
-\- IoT-based remote monitoring
-
-
-
-\## System Architecture
-
-
-
-IR Sensors → ESP32 → Wi-Fi → Blynk Cloud → Blynk Mobile App
-
-
-
-\## Project Description
-
-
-
-The system detects parking slot occupancy using IR sensors connected to an ESP32 controller. The parking status is displayed on an LCD and transmitted to the Blynk IoT platform through Wi-Fi.
-
-
-
-Users can monitor parking availability and book available slots through the Blynk mobile application. Servo motors are used to control the entry and exit gates.
-
-
-
-\## Project Type
-
-
-
-IoT / Embedded Systems / Smart Parking
-
+```text
+smart-parking-iot/
+├── images/
+├── src/
+│ └── smart_parking.ino
+├── .gitignore
+└── README.md
